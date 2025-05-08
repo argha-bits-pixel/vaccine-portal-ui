@@ -411,6 +411,7 @@ const StudentManagement: React.FC = () => {
                     clearable
                   />
                 </Table.Th>
+                <Table.Th>Vaccination Date</Table.Th>
                 <Table.Th style={{ width: "80px" }}>Actions</Table.Th>
               </Table.Tr>
             </Table.Thead>
@@ -426,6 +427,7 @@ const StudentManagement: React.FC = () => {
                     <Table.Td>{student.phone_no}</Table.Td>
                     <Table.Td>{student.vaccination ? "Yes" : "No"}</Table.Td>
                     <Table.Td>{student.vaccine_name}</Table.Td>
+                    <Table.Td>{student.vaccine_date}</Table.Td>
                     <Table.Td>
                       <Group dir="col">
                         <ActionIcon
